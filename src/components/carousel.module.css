@@ -155,6 +155,8 @@ section {
 .text_overlay {
   width: 100%;
   padding: 10px;
+  top: 20px;
+
 }
 
 .text_overlay .glass_effect {
