@@ -1,0 +1,39 @@
+.swiper {
+    width: 100%;
+    height: 100vh;
+    margin-top: 60px;
+}
+
+/* .swiper-slide:hover {
+    transition: .3s;
+    box-shadow: 15px 15px 20px #00000058;
+    border: 3px solid salmon;
+} */
+
+.card_box {
+    padding: 20px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 10px;
+}
+
+/* .card_box:hover {
+    transition: .3s;
+    box-shadow: 15px 15px 20px #00000058;
+} */
+
+.card_box .img_div {
+    overflow: hidden;
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+    object-fit: cover;
+    }
+  
+  
+  .card_box .img_div img {
+    width: 100%;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 12px;
+  }

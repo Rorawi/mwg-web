@@ -120,10 +120,10 @@ const Navbar = () => {
         <a href="#" className={styles.navbar_brand}>
           <img src={mwgLogo} alt="MWG Logo" />
         </a>
-        <div className={styles.menu_btn} onClick={toggleNav}>
-          {show ? <FaTimes /> : <AiOutlineMenu />}
-        </div>
 
+        <div className={styles.menu_btn} onClick={toggleNav}>
+          {show ? <FaTimes className={styles.menu_btn_svg}/> : <AiOutlineMenu className={styles.menu_btn_svg}/>}
+        </div>
         <ul className={`${styles.navbar_links} ${show ? styles.navbar_active : styles.navbar_links}`}>
           <li>
             <a href="#">Home</a>

@@ -2,21 +2,17 @@ main {
     margin-top: 10rem;
 }
 
-section {
+
+.sec_01 {
+    margin: 0 6rem;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
     flex-wrap: wrap;
-
-    margin: 0 5rem;
 }
 
-/* .img_div {
-    width: 20%;
-} */
-
 .img_div .img1 {
-    width: 350px;
+    width: 400px;
     height: 400px;
     overflow: hidden;
 
@@ -51,35 +47,78 @@ section {
 /* .text_box {
     width: 40%;
 } */
-section .text_box h2 {
-    color: #ffc107;
+.sec_01 .text_box h2 {
+    color: #e69e21;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    margin: 0 0 5px;
 }
 
 
-section .text_box h1 {
+.sec_01 .text_box h1 {
     font-size: 45px;
     color: #232323;
     margin: 14px 0;
 
     line-height: .9;
+
+    max-width: 550px;
+        margin-bottom: 0px;
+    text-transform: capitalize;
+    margin-top: 0;
+    line-height: 1.2;
+    font-weight: 700;
 }
 
-section .text_box h1 span{
+.sec_01 .text_box h1 span{
     color: #ffc107;
 }
 
-section .text_box p {
+.sec_01 .text_box p {
     max-width: 500px;
 }
 
+
+.sec_01 .text_box h3 {
+    width: 50%;
+    font-size: 20px;
+}
+
+
+/*Services*/
 .services {
+    background-color: #F4F7FC;
+    padding: 60px 80px;
+}
+
+.services .text_box {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-section .text_box h3 {
-width: 50%;
-font-size: 20px;
+.services .text_box h2 {
+    color: #e69e21;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    margin: 0 0 5px;
+}
+
+.services .text_box h1 {
+max-width: 500px;
+text-transform: capitalize;
+
+line-height: 1.2;
+font-weight: 700;
+}
+.services .text_box p {
+max-width: 500px;
+font-size: 18px;
 }

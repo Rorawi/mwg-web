@@ -32,8 +32,9 @@ nav {
   display: none;
 }
 
-.menu_btn svg {
+.menu_btn_svg {
   color: #fff;
+  font-size: 25px;
 }
 
 ul {
@@ -83,7 +84,7 @@ a {
 }
 
 .scrolledHeader a,
-.menu_btn svg {
+.scrolledHeader .menu_btn_svg {
   color: rgb(21, 21, 21);
 }
 
@@ -102,7 +103,7 @@ a {
     align-items: flex-start;
     flex-direction: column;
     position: fixed;
-    top: 90px;
+    top: 100px;
     right: -300px;
     width: 300px;
     height: 100vh;

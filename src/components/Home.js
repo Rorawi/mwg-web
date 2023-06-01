@@ -4,6 +4,7 @@ import img1 from "../assets/mwg-swiper1.jpg";
 import styles from "../components/home.module.css";
 import Hero from "./Hero";
 import { HiOutlineHomeModern } from "react-icons/hi2"
+import { SwiperComp } from "./SwiperComp";
 
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
     <div>
       <Hero />
       <main>
-        <section>
+        <section className={styles.sec_01}>
           <div className={styles.img_div}>
 
             <div className={styles.img1}>
@@ -25,7 +26,7 @@ export default function Home() {
 
           <div className={styles.text_box}>
             <h2>// About The Company</h2>
-            <h1>We empower the <span>youth</span> <br/>to solve local problems</h1>
+            <h1>We empower the <span>youth</span> to solve local problems</h1>
             <p>
               Mobile Web Ghana is a technology and entrepreneurship hub that is
               dedicated to empowering the youth to develop mobile and web
@@ -38,6 +39,22 @@ export default function Home() {
             </p>
 
           </div>
+        </section>
+
+        <section className={styles.services}>
+            <div className={styles.text_box}>
+            <div>
+            <h2>// Our Services</h2>
+            <h1>We empower the <span>youth</span> to solve local problems</h1>
+            </div>
+          <p>
+          Mobile Web Ghana is a technology and entrepreneurship hub that is
+              dedicated to empowering the youth to develop mobile and web
+              applications and open data solutions to solve local problems. Our
+              goal is to 
+          </p>
+            </div>
+            <SwiperComp/>
         </section>
       </main>
     </div>
