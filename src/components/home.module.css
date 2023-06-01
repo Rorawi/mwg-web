@@ -11,9 +11,9 @@ section {
     margin: 0 5rem;
 }
 
-.img_div {
+/* .img_div {
     width: 20%;
-}
+} */
 
 .img_div .img1 {
     width: 350px;
@@ -48,9 +48,9 @@ section {
 
 
 /*Text Box*/
-.text_box {
+/* .text_box {
     width: 40%;
-}
+} */
 section .text_box h2 {
     color: #ffc107;
 }

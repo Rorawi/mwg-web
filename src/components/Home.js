@@ -5,6 +5,7 @@ import styles from "../components/home.module.css";
 import Hero from "./Hero";
 import { HiOutlineHomeModern } from "react-icons/hi2"
 
+
 export default function Home() {
   return (
     <div>
@@ -36,14 +37,6 @@ export default function Home() {
               mentoring. We undertake some ICT for development projects.
             </p>
 
-            <div className={styles.services}>
-              <h3><HiOutlineHomeModern/> Technology hubs</h3>
-              <h3><HiOutlineHomeModern/> Technology hubs</h3>
-              <h3><HiOutlineHomeModern/> Technology hubs</h3>
-              <h3><HiOutlineHomeModern/> Technology hubs</h3>
-              <h3><HiOutlineHomeModern/> Technology hubs</h3>
-              <h3><HiOutlineHomeModern/> Technology hubs</h3>
-            </div>
           </div>
         </section>
       </main>

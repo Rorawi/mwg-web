@@ -14,20 +14,7 @@
   padding: 10px 0;
   background-color: transparent;
   z-index: 10;
-
   transition: .2s ease-in;
-}
-
-.scrolledHeader {
-    position: fixed;
-  background-color: #fff;
-  box-shadow: 10px 10px 5px #aab3d258;
-  z-index: 10;
-}
-
-.scrolledHeader a {
-    color: rgb(21, 21, 21);
-
 }
 
 nav {
@@ -39,6 +26,14 @@ nav {
 
 .navbar_brand img {
   width: 100px;
+}
+
+.menu_btn {
+  display: none;
+}
+
+.menu_btn svg {
+  color: #fff;
 }
 
 ul {
@@ -53,15 +48,10 @@ li {
   text-decoration: none;
   list-style: none;
 }
-/* 
-li {
-    margin: 0 5px;
-} */
 
 a {
   color: white;
   font-weight: 500;
-  font-family: sans-serif;
 }
 
 .navbar_links a::before {
@@ -78,4 +68,55 @@ a {
 
 .navbar_links a:hover::before {
   width: 100%;
+}
+
+/* Scrolled (Active) header */
+.scrolledHeader {
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 10px 10px 5px #aab3d258;
+  z-index: 10;
+}
+
+.scrolledHeader a {
+  color: rgb(21, 21, 21);
+}
+
+.scrolledHeader a,
+.menu_btn svg {
+  color: rgb(21, 21, 21);
+}
+
+.scrolledHeader .navbar_links a::before {
+  background-color: #232323;
+}
+
+@media screen and (max-width: 769px) {
+  .menu_btn {
+    display: block;
+  }
+
+  .navbar_links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    position: fixed;
+    top: 90px;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: #ffc107;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 40px 0 0 10px;
+    transition: right 0.3s ease-in-out;
+  }
+
+  .navbar_links.navbar_active {
+    right: 0px;
+  }
+
+  .navbar_links li {
+    margin-bottom: 25px;
+  }
 }

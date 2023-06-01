@@ -5,6 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
+
 export default function Hero() {
   const [text] = useTypewriter({
     words: ["Technology hubs", "Data Science", "IT consultancy", "Startup incubation and mentorship", "Girls in ICT"],
@@ -19,7 +20,6 @@ export default function Hero() {
         <div className={styles.text_overlay}>
           <div className={styles.glass_effect}>
             <div className={styles.text}>
-              <hr />
               <h3>WE OFFER</h3>
               <h1>
                 {" "}
