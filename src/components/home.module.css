@@ -12,7 +12,7 @@ main {
 }
 
 .img_div .img1 {
-    width: 400px;
+    width: 350px;
     height: 400px;
     overflow: hidden;
 
@@ -20,7 +20,7 @@ main {
 }
 .img_div .img2 {
     width: 300px;
-    height: 400px;
+    height: 200px;
     overflow: hidden;
 
     position: relative;
@@ -128,4 +128,8 @@ font-size: 18px;
         margin: 0rem 2rem;
     }
     
+    .services {
+        background-color: #F4F7FC;
+        padding: 60px 34px;
+    }
 }

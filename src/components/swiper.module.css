@@ -1,7 +1,7 @@
 .swiper {
-    width: 100%;
-    height: 100vh;
-    margin-top: 60px;
+  width: 100%;
+  /* height: 100vh; */
+  margin-top: 60px;
 }
 
 /* .swiper-slide:hover {
@@ -11,10 +11,11 @@
 } */
 
 .card_box {
-    padding: 20px;
-    overflow: hidden;
-    background: #fff;
-    border-radius: 10px;
+  padding: 20px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 10px;
+  height: 550px;
 }
 
 /* .card_box:hover {
@@ -23,17 +24,107 @@
 } */
 
 .card_box .img_div {
-    overflow: hidden;
-    width: 100%;
-    height: 450px;
-    border-radius: 15px;
-    object-fit: cover;
-    }
-  
-  
-  .card_box .img_div img {
-    width: 100%;
-    cursor: pointer;
-    object-fit: cover;
-    border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.card_box .img_div img {
+  width: 100%;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.card_box .text_box {
+  padding: 33px 14px;
+}
+
+.card_box .text_box button {
+  border-radius: 15px;
+  text-transform: capitalize;
+  background-color: #ffc107;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 16px 22px;
+  margin: 10px 0;
+  position: relative;
+  font-size: 17px;
+  font-weight: 500;
+
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.3s;
+  width: 100%;
+
+  box-shadow: 5px 5px 10px #cdcdcd;
+  cursor: pointer;
+}
+
+/* .card_box .text_box button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 33%;
+    height: 100%;
+    z-index: -1;
+    transform: skew(-29deg);
+    padding-left: 20px;
+    background-color: #000;
+    transition: .3s;
+
+  } */
+
+/* .card_box .text_box button:hover button::after {
+    background-color: #e6cf21;
+  } */
+
+.card_box .text_box button:hover {
+  background-color: #151515;
+}
+
+/* Custom styles for swiper pagination */
+.swiper-pagination-container {
+  position: fixed;
+  bottom: 20px; /* Adjust the positioning according to your needs */
+  right: 20px; /* Adjust the positioning according to your needs */
+  z-index: 100;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #000 !important;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet {
+
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #ff0000; /* Set your desired active color here */
+}
+
+
+@media screen and (max-width: 769px) {
+  .card_box .img_div {
+    height: 100px;
   }
+
+  .card_box {
+    padding: 20px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 10px;
+    height: 350px;
+  }
+}
