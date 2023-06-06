@@ -4,11 +4,22 @@
   margin-top: 60px;
 }
 
-/* .swiper-slide:hover {
-    transition: .3s;
-    box-shadow: 15px 15px 20px #00000058;
-    border: 3px solid salmon;
+/* .swiper-pagination {
+  display: none !important;
 } */
+
+.paginationButton {
+  width:20px;
+  height:20px;
+  border-radius:100%;
+}
+
+
+.swiper-slide:hover {
+    transition: .3s;
+    box-shadow: 15px 15px 20px #fff;
+    border: 3px solid salmon;
+}
 
 .card_box {
   padding: 20px;
@@ -184,6 +195,11 @@ display: flex;
 transform: translateX(5px);
 transition: .3s ease-in-out;
 }
+
+.swiper-pagination {
+  background-color: #f9af1a !important;
+}
+
 
 .blog_card_box .text_box svg {
   align-self: center;
