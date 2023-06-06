@@ -108,7 +108,7 @@ a {
     right: -300px;
     width: 300px;
     height: 100vh;
-    background-color: #ffc107;
+    background-color: #f9af1a    ;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 40px 40px 10px;
     transition: right 0.3s ease-in-out;

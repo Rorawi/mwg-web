@@ -48,7 +48,7 @@ main {
     width: 40%;
 } */
 .sec_01 .text_box h2 {
-    color: #e69e21;
+    color: #f9af1a;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
@@ -74,7 +74,8 @@ main {
 }
 
 .sec_01 .text_box h1 span{
-    color: #ffc107;
+    color: #f9af1a
+    ;
 }
 
 .sec_01 .text_box p {
@@ -102,7 +103,7 @@ main {
 }
 
 .services .text_box h2 {
-    color: #e69e21;
+    color: #f9af1a;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;

@@ -29,7 +29,7 @@ export default function Hero() {
               <h1>
                 {" "}
                 <span>{text}</span>
-                <Cursor cursorColor="#ffc107" />
+                <Cursor cursorColor="#f9af1a" />
               </h1>
             </div>
             <p>
