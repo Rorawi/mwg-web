@@ -4,7 +4,7 @@ import img1 from "../assets/mwg-swiper1.jpg";
 import styles from "../components/home.module.css";
 import Hero from "./Hero";
 import { HiOutlineHomeModern } from "react-icons/hi2";
-import { SwiperComp } from "./SwiperComp";
+import { LogoSwiper, SwiperComp } from "./SwiperComp";
 import Team from "./Team";
 import Map from "./Map";
 import Blog from "./Blog";
@@ -63,6 +63,7 @@ export default function Home() {
           {/* <Team/> */}
           <Map/>
           <Blog />
+          {/* <LogoSwiper/> */}
     </div>
   );
 }

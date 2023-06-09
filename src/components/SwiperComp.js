@@ -1,14 +1,22 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Navigation, Scrollbar, A11y } from "swiper";
+import { Navigation, Scrollbar, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import img from "../assets/mwg.hub.png";
+
+import mastercard from "../assets/Mastercard-logo.png";
+import amspaces_logo from "../assets/amspaces_logo.png";
+import odc_logo from "../assets/odc.png";
+import us_embasy_logo from "../assets/us_embasy_logo.jpg";
+import gdc_logo from "../assets/gdc_logo.png";
+import mwg_logo from "../assets/mwg-logo.png";
 
 import styles from "../components/swiper.module.css";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-// import "swiper/css/pagination";
+//import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import "swiper/css/autoplay";
 import SwiperCore, { Pagination } from "swiper";
 
 import { Link } from "react-router-dom";
@@ -150,7 +158,7 @@ export const BlogSwiper = () => {
         // install Swiper modules
         ref={swiperRef}
         modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={20}
+        spaceBetween={25}
         slidesPerView={3}
         loop={true}
         breakpoints={responsiveOptions}
@@ -316,6 +324,155 @@ export const BlogSwiper = () => {
               Read More
               <AiOutlineArrowRight />
             </a>
+          </div>
+        </SwiperSlide>
+
+        <div className={styles.pagination}>
+          <button
+            className={styles.paginationButton}
+            onClick={() => handlePaginationClick(0)}
+          ></button>
+          <button
+            className={styles.paginationButton}
+            onClick={() => handlePaginationClick(1)}
+          ></button>
+          <button
+            className={styles.paginationButton}
+            onClick={() => handlePaginationClick(2)}
+          ></button>
+          <button
+            className={styles.paginationButton}
+            onClick={() => handlePaginationClick(4)}
+          ></button>
+          <button
+            className={styles.paginationButton}
+            onClick={() => handlePaginationClick(6)}
+          ></button>
+          <button
+            className={styles.paginationButton}
+            onClick={() => handlePaginationClick(8)}
+          ></button>
+          <button
+            className={styles.paginationButton}
+            onClick={() => handlePaginationClick(10)}
+          ></button>
+          <button
+            className={styles.paginationButton}
+            onClick={() => handlePaginationClick(12)}
+          ></button>
+          <button
+            className={styles.paginationButton}
+            onClick={() => handlePaginationClick(0)}
+          ></button>
+        </div>
+        {/* edit swiper */}
+      </Swiper>
+    </div>
+  );
+};
+
+export const LogoSwiper = () => {
+  const responsiveOptions = {
+    1024: {
+      slidesPerView: 5,
+    },
+
+    320: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 5,
+    },
+  };
+  return (
+    <div>
+      <Swiper
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+        spaceBetween={10}
+        slidesPerView={5}
+        // navigation
+        breakpoints={responsiveOptions}
+        pagination={{ clickable: true }}
+        // scrollbar={{ draggable: true, hide: true }}
+        onSwiper={(swiper) => console.log(swiper)}
+        effect="fade"
+        loop={true}
+        autoplay={true}
+        disableoninteraction="false"
+        onSlideChange={() => console.log("slide change")}
+        className={[styles.swiper, styles.logo_swiper]}
+      >
+        <SwiperSlide className={styles.logo_swiperslide}>
+          <img src={mastercard} className={styles.logo} />
+        </SwiperSlide>
+        <SwiperSlide className={styles.logo_swiperslide}>
+          <img src={odc_logo} className={styles.logo} />
+        </SwiperSlide>
+        <SwiperSlide className={styles.logo_swiperslide}>
+          <img src={amspaces_logo} className={styles.logo} />
+        </SwiperSlide>
+        <SwiperSlide className={styles.logo_swiperslide}>
+          <img src={gdc_logo} className={styles.logo} />
+        </SwiperSlide>
+        <SwiperSlide className={styles.logo_swiperslide}>
+          <img src={us_embasy_logo} className={styles.logo} />
+        </SwiperSlide>
+        <SwiperSlide className={styles.logo_swiperslide}>
+          <img src={mwg_logo} className={styles.logo} />
+        </SwiperSlide>
+        {/* edit swiper */}
+      </Swiper>
+    </div>
+  );
+};
+
+export const TestimonialSwiper = () => {
+  SwiperCore.use([Pagination]);
+  const swiperRef = useRef(null);
+
+  const handlePaginationClick = (index) => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideTo(index);
+    }
+  };
+
+  const responsiveOptions = {
+    1024: {
+      slidesPerView: 3,
+    },
+
+    320: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+  };
+  return (
+    <div>
+      <Swiper
+        // install Swiper modules
+        ref={swiperRef}
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        spaceBetween={25}
+        slidesPerView={3}
+        loop={true}
+        breakpoints={responsiveOptions}
+        pagination={{ clickable: false }}
+        effect="fade"
+        className={styles.swiper}
+      >
+        <SwiperSlide className={styles.testimonial_card_box}>
+          <div className={styles.img_div}>
+            <img src={img} alt="our image" />
+          </div>
+
+          <div className={styles.text_box}>
+            <h2>Adwoa Asantewaa Asante</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
           </div>
         </SwiperSlide>
 

@@ -1,7 +1,35 @@
 .blog_sec {
     background-color: #292929;
     padding: 80px;
+    position: relative;
+    overflow: hidden;
 }
+
+/* .blog_sec .img_div {
+position: absolute;
+top: 0;
+left: 0;
+} */
+
+.blog_sec .img_div {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+.blog_sec .img_div_1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+    rotate: 180deg;
+  }
+  
+  .blog_sec .img_div img , .blog_sec .img_div_1 img {
+    width: 100%;
+    object-fit: cover;
+    height: 450px;
+  }
 
 /*Text Box*/
 .blog_sec .text_box {

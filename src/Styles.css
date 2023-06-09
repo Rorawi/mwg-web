@@ -11,6 +11,14 @@
     /* background-color: #000; */
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::selection{
+    background-color: #ffc107;
+    color: #000;
+  }
 
   @media screen and (max-width: 800px) {
   section {
