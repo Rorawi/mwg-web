@@ -212,6 +212,17 @@ rotate: 5deg;
     flex-wrap: wrap;
   }
 
+  .team_sec .text_box {
+    flex-direction: column;
+    }
+
+    .team_sec .text_box h1 {
+      font-size: 30px;
+    }
+
+    .team_sec .text_box p {
+      text-align: left;
+    }
   /* .profile{
     width: 150px;
     height: 150px;

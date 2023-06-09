@@ -225,6 +225,27 @@ font-size: 18px;
 }
 
 @media screen and (max-width: 800px) {
+  .experience {
+    margin: 80px 20px;
+    
+    flex-direction: column;
+  }
+
+  .group_img_div {
+    width: 310px;
+    height: 310px;
+    
+    border-radius: 100%;
+    overflow: hidden;
+    align-self: center;
+
+    margin-bottom: 50px;
+    }
+
+    .video h2 {
+      width: 408px;
+    }
+
   .banner_text h1 {
     text-align: center;
     margin-right: 0px;

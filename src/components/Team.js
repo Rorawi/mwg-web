@@ -16,12 +16,6 @@ const TeamSection = () => {
   return (
     <>
       <section className={styles.team_sec}>
-        {/* <h1 className={styles.heading}>Meet Our Team</h1>
-        <p className={styles.heading_p}>
-          Meet our amazing team of skilled professionals,
-          <br /> dedicated to delivering exceptional results and exceeding
-          expectations
-        </p> */}
         <div className={styles.text_box}>
            <div>
            <h2>// Our Strong Team</h2>
@@ -30,8 +24,7 @@ const TeamSection = () => {
             </h1>
            </div>
             <p>
-            Meet our amazing team of skilled professionals,
-          <br /> dedicated to delivering exceptional results and exceeding
+            Meet our amazing team of skilled professionals, dedicated to delivering exceptional results and exceeding
           expectations.
             </p>
           </div>
