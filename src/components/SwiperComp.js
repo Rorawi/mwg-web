@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Navigation, Scrollbar, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import img from "../assets/mwg.hub.png";
+import profile from "../assets/profile.jpg";
 
 import mastercard from "../assets/Mastercard-logo.png";
 import amspaces_logo from "../assets/amspaces_logo.png";
@@ -22,6 +23,7 @@ import SwiperCore, { Pagination } from "swiper";
 import { Link } from "react-router-dom";
 import { BsFillPersonFill, BsClockFill } from "react-icons/bs";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { FaStar, FaStarHalf } from "react-icons/fa";
 
 export const SwiperComp = () => {
   const responsiveOptions = {
@@ -464,15 +466,136 @@ export const TestimonialSwiper = () => {
       >
         <SwiperSlide className={styles.testimonial_card_box}>
           <div className={styles.img_div}>
-            <img src={img} alt="our image" />
+            <img src={profile} alt="our image" />
           </div>
 
           <div className={styles.text_box}>
-            <h2>Adwoa Asantewaa Asante</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Mobile Web Ghana has changed lives and inspired hope. Their
+              impactful work is making a difference in our community.
             </p>
+            <div className={styles.stars}>
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStarHalf />
+            </div>
+            <h2>Adwoa</h2>
+            <h3>Frontend Developer</h3>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className={styles.testimonial_card_box}>
+          <div className={styles.img_div}>
+            <img src={profile} alt="our image" />
+          </div>
+
+          <div className={styles.text_box}>
+            <p>
+              I am incredibly grateful for the support and resources provided by
+              Mobile Web Ghana. They are truly making a positive impact in the lives
+              of those in need.{" "}
+            </p>
+            <div className={styles.stars}>
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStarHalf />
+            </div>
+            <h2>Asantewaa</h2>
+            <h3>App Developer</h3>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide className={styles.testimonial_card_box}>
+          <div className={styles.img_div}>
+            <img src={profile} alt="our image" />
+          </div>
+
+          <div className={styles.text_box}>
+            <p>
+              Choosing to work with Mobile Web Ghana has been a life-changing
+              decision. Their dedication and passion for helping others is
+              commendable.
+            </p>
+            <div className={styles.stars}>
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStarHalf />
+            </div>
+            <h2>Asante</h2>
+            <h3>Backend Developer</h3>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide className={styles.testimonial_card_box}>
+          <div className={styles.img_div}>
+            <img src={profile} alt="our image" />
+          </div>
+
+          <div className={styles.text_box}>
+            <p>
+              I have witnessed firsthand the incredible work done by Mobile Web Ghana.
+              Their commitment to making a difference is truly inspiring.
+            </p>
+            <div className={styles.stars}>
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStarHalf />
+            </div>
+            <h2>Winifred</h2>
+            <h3>Senior Frontend Developer</h3>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide className={styles.testimonial_card_box}>
+          <div className={styles.img_div}>
+            <img src={profile} alt="our image" />
+          </div>
+
+          <div className={styles.text_box}>
+            <p>
+              Being involved with Mobile Web Ghana has been an enriching experience.
+              They have created a platform for change and are transforming
+              lives.{" "}
+            </p>
+            <div className={styles.stars}>
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStarHalf />
+            </div>
+            <h2>Winifred</h2>
+            <h3>Senior Frontend Developer</h3>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide className={styles.testimonial_card_box}>
+          <div className={styles.img_div}>
+            <img src={profile} alt="our image" />
+          </div>
+
+          <div className={styles.text_box}>
+            <p>
+              I can confidently say that Mobile Web Ghana is an organization that
+              truly cares. Their efforts to bring about social change are
+              commendable, and I am proud to support their mission.
+            </p>
+            <div className={styles.stars}>
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStarHalf />
+            </div>
+            <h2>Winifred</h2>
+            <h3>Senior Frontend Developer</h3>
           </div>
         </SwiperSlide>
 

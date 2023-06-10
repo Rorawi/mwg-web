@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../components/blog.module.css";
+import styles from "../components/testimonial.module.css";
 import { TestimonialSwiper } from "./SwiperComp";
 
 import design from "../assets/abstract.png";
@@ -7,7 +7,7 @@ import design from "../assets/abstract.png";
 const Testimonial = () => {
   return (
     <>
-      <section className={styles.blog_sec}>
+      <section className={styles.testimonial_sec}>
         <div className={styles.img_div}>
           <img src={design} alt="Our design" />
         </div>

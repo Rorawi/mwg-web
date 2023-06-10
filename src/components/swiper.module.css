@@ -16,9 +16,9 @@
 }
 
 .paginationButton {
-  width:12px;
-  height:12px;
-  border-radius:100%;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
   border: 2px solid #f9af1a;
   background-color: transparent;
   margin: 0 10px;
@@ -26,8 +26,8 @@
 
 .paginationButton:focus {
   background-color: #f9af1a;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
-  transition: .3s ease-in-out;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease-in-out;
 }
 
 /* 
@@ -182,40 +182,39 @@
 
 .blog_card_box .name_time .name svg,
 .blog_card_box .name_time .time svg {
- margin-right: 5px;
- color: #f9af1ad6;
+  margin-right: 5px;
+  color: #f9af1ad6;
 }
 
 .blog_card_box .name_time .name h5,
-.blog_card_box .name_time .time h5{
- color: #616161;
+.blog_card_box .name_time .time h5 {
+  color: #616161;
 }
 
-.blog_card_box .text_box h2{
-margin: 10px 0;
-color: #151515;
+.blog_card_box .text_box h2 {
+  margin: 10px 0;
+  color: #151515;
 }
 
 .blog_card_box .text_box p {
   margin-bottom: 20px;
 }
 
-.blog_card_box .text_box a{
+.blog_card_box .text_box a {
   font-size: 15px;
-color: #f9af1a;
-font-weight: 400;
-display: flex;
+  color: #f9af1a;
+  font-weight: 400;
+  display: flex;
 }
 
-.blog_card_box .text_box a:hover svg{
-transform: translateX(5px);
-transition: .3s ease-in-out;
+.blog_card_box .text_box a:hover svg {
+  transform: translateX(5px);
+  transition: 0.3s ease-in-out;
 }
 
 .swiper-pagination {
   background-color: #f9af1a !important;
 }
-
 
 .blog_card_box .text_box svg {
   align-self: center;
@@ -224,13 +223,81 @@ transition: .3s ease-in-out;
 
 .logo {
   filter: grayscale(80%);
-  opacity:.5;
+  opacity: 0.5;
   width: 100%;
   max-width: 90px;
 }
 
 .logo_swiper {
-background-color: #f9af1a;
+  background-color: #f9af1a;
+}
+
+/*TESTIMONIAL*/
+
+.testimonial_card_box {
+  border: 2px solid white;
+  padding: 25px 20px;
+  /* width: 336px!important; */
+  height: 400px!important;
+
+  background-color: #fff;
+  border-radius: 30px;
+  transition: .3s ease-in-out;
+  
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+}
+
+.testimonial_card_box:hover {
+  box-shadow: 0px 2px 6px rgba(109, 108, 108, 0.358); /* Example shadow effect */
+
+}
+
+.testimonial_card_box .img_div {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.testimonial_card_box .img_div img {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.testimonial_card_box .text_box {
+  border: 1px solid white;
+
+  margin: 10px ;
+}
+
+.testimonial_card_box .text_box h2 {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+.testimonial_card_box .stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 35px;
+}
+
+.testimonial_card_box .stars svg {
+  color: #f9af1a;
+}
+
+.testimonial_card_box .text_box h3 {
+  font-size: 14px;
+  font-weight: 420;
+  color: #fda900;
 }
 
 @media screen and (max-width: 769px) {

@@ -68,7 +68,7 @@ export default function AboutUs() {
             Appropriate for your specific business, making it easy for you to
             have quality IT services.
           </p>
-          <a href="#">Watch More</a>
+          <a href="https://www.youtube.com/@MobileWebGhana">Watch More</a>
         </div>
       </section>
       <TeamSection/>

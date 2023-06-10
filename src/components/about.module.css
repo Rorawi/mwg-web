@@ -59,7 +59,8 @@
 .video {
   /* width: 1263.33px; */
   height: 702px;
-  background: #ffbf0033;
+  background-color: #292929;
+
 
   display: flex;
   justify-content: center;
@@ -73,7 +74,7 @@
   width: 90px;
   height: 90px;
 
-  color: #232323;
+  color: #fff;
   background-color: #f9af1a;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   font-size: 20px;
@@ -97,7 +98,7 @@
 .video h2 {
   font-size: 35px;
   width: 587.05px;
-  color: #232323;
+  color: #fff;
   text-align: center;
 }
 
@@ -108,6 +109,8 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  color: #ffffff86;
+
   /* or 150% */
 
   display: flex;
@@ -131,7 +134,8 @@
 
 .video a:hover {
 
-  background: #232323;
+  background: #fff;
+  color: #ffc107;
   border-radius: 4px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
