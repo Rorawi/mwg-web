@@ -63,3 +63,10 @@ text-align: center;
 .blog_sec .text_box h1 span{
     color: #f9af1a;
 }
+
+
+@media screen and (max-width:414px) {
+  .blog_sec {
+    padding: 30px;
+}
+}

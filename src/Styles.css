@@ -21,9 +21,9 @@
   }
 
   @media screen and (max-width: 800px) {
-  section {
+  /* section {
     text-align: justify;
-  }
+  } */
 
   .img_div .img1{
     width: 324px;

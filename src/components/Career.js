@@ -4,6 +4,7 @@ import img1 from "../assets/mwg-swiper1.jpg";
 import { FaBook, FaHandshake } from "react-icons/fa";
 import { BiMessage, BiWorld } from "react-icons/bi";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Career = () => {
   return (
@@ -23,55 +24,68 @@ const Career = () => {
         <div className={styles.text_box}>
           <h2>// About The Company</h2>
           <h1>
-            We empower the <span>youth</span> to solve local problems
+            We'd <span>love</span> to have you in our team
           </h1>
           <p>
-            Mobile Web Ghana is a technology and entrepreneurship hub that is
-            dedicated to empowering the youth to develop mobile and web
-            applications and open data solutions to solve local problems. Our
-            goal is to build the capacity of young tech-enthusiasts to be able
-            to meet the demands of the tech industry in Ghana and beyond.We also
-            create a conducive working environment for tech-businesses to thrive
-            by offering them a co-working space, offices and start-up mentoring.
-            We undertake some ICT for development projects.
+          Mobile Web Ghana is inviting applications for graduates who wish to do their national service with the organization to apply for the year 2022 – 2023 period.<br/>
+          Are you a
+
+          <ul>
+  <li>web or mobile app developer</li>
+  <li>social media strategist</li>
+  <li>creative blogger</li>
+  <li>graphic designer</li>
+  <li>marketing and sales personnel</li>
+  <li>planning students</li>
+</ul>
+
+
+We are looking forward to working with smart, and proactive graduates. 
+
           </p>
 
-          <button>Join Our Team 
-            <AiOutlineArrowRight/>
+          <Link to="/contact">
+          <button>
+            Join Our Team
+            <div className={styles.svg_div}>
+              {" "}
+              <AiOutlineArrowRight />
+            </div>
           </button>
+          </Link>
         </div>
 
-       <div>
-       <div className={styles.career_details}>
-          <div className={styles.career_detail}>
-            <div className={styles.svg_div}>
-              <FaHandshake />
+        <div>
+          <div className={styles.career_details}>
+            <div className={styles.career_detail}>
+              <div className={styles.svg_div}>
+                <FaHandshake />
+              </div>
+              <h2>Friendly Environment</h2>
             </div>
-            <h2>Friendly Environment</h2>
-          </div>
-          <div className={styles.career_detail}>
-            <div className={styles.svg_div}>
-              <BiWorld />
+            <div className={styles.career_detail}>
+              <div className={styles.svg_div}>
+                <BiWorld />
+              </div>
+              <h2>One In a Miilion</h2>
             </div>
-            <h2>One In a Miilion</h2>
           </div>
-        </div>
 
-        <div className={styles.career_details}>
-          <div className={styles.career_detail}>
-            <div className={styles.svg_div}>
-              <BiMessage />
+          <div className={styles.career_details}>
+            <div className={styles.career_detail}>
+              <div className={styles.svg_div}>
+                <BiMessage />
+              </div>
+              <h2>Open Communications</h2>
             </div>
-            <h2>Open Communications</h2>
-          </div>
-          <div className={styles.career_detail}>
-            <div className={styles.svg_div}>
-              <FaBook />
+            <div className={styles.career_detail}>
+              <div className={styles.svg_div}>
+                <FaBook />
+              </div>
+              <h2>Intellectual</h2>
             </div>
-            <h2>Intellectual</h2>
           </div>
         </div>
-       </div>
       </section>
     </>
   );

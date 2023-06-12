@@ -22,6 +22,10 @@ export default function AboutUs() {
         </div>
       </div>
 
+      <section className={styles.statements}>
+<div className={styles.statement}></div>
+      </section>
+
 
 {/*Experience  */}
       <section className={styles.experience}>

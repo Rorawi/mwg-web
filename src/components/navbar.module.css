@@ -5,7 +5,6 @@
   margin: 0;
   box-sizing: border-box;
   /* font-family: "Work Sans", sans-serif; */
-  
 }
 
 .fixedHeader {
@@ -15,7 +14,7 @@
   padding: 10px 0;
   background-color: transparent;
   z-index: 10;
-  transition: .2s ease-in;
+  transition: 0.2s ease-in;
 }
 
 nav {
@@ -80,7 +79,8 @@ a {
   z-index: 10;
 }
 
-.scrolledHeader a {
+.scrolledHeader a,
+.scrolledHeader .dropdownItem {
   color: rgb(21, 21, 21);
 }
 
@@ -91,6 +91,31 @@ a {
 
 .scrolledHeader .navbar_links a::before {
   background-color: #232323;
+}
+
+/*DropDown*/
+.dropdownItem {
+  position: relative;
+  color: #f2f2f2;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  z-index: 2;
+}
+
+.dropdownContentVisible {
+  display: block;
 }
 
 @media screen and (max-width: 769px) {
@@ -108,7 +133,7 @@ a {
     right: -300px;
     width: 300px;
     height: 100vh;
-    background-color: #f9af1a    ;
+    background-color: #f9af1a;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 40px 40px 10px;
     transition: right 0.3s ease-in-out;
@@ -124,7 +149,7 @@ a {
 
   .navbar_links a:hover {
     color: #232323;
-    transition: .2s ease;
+    transition: 0.2s ease;
   }
 
   .navbar_links a:hover::before {
@@ -133,6 +158,6 @@ a {
 
   .scrolledHeader .navbar_links a:hover {
     color: #f2f2f2;
-    transition: .2s ease;
+    transition: 0.2s ease;
   }
 }

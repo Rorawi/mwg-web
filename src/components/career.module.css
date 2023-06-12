@@ -92,6 +92,7 @@
     margin-top: 0;
     line-height: 1.2;
     font-weight: 700;
+    text-align: left;
   }
   
   .career .text_box h1 span {
@@ -110,6 +111,7 @@
   .career .text_box button {
     display: inline-block;
     background: #f9af1a;
+    box-shadow: 5px 5px 5px rgba(25, 30, 44, 0.192);
     color: #fff;
     font-size: 15px;
     text-transform: uppercase;
@@ -121,8 +123,10 @@
     border: transparent;
 
     margin: 40px 0;
-    padding: 20px 45px ;
+    padding: 15px 30px 15px 45px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
 
   }
@@ -142,14 +146,31 @@
 
   }
 
-.career .text_box button svg {
-    align-self: center;
-    margin-left: 5px;
-}
+  .career .text_box button .svg_div {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    background: #fff;
+    color: #232323;
+    border-radius: 100%;
+    position: relative;
+    left: 17px;
+    transition: 0.5s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
 
   
   .career .text_box button:hover::before {
     width: 100%;
+  }
+
+  .career .text_box button:hover .svg_div{
+    background: #f9af1a;
+    color: #fff;
   }
   .career_details {
     display: flex;
@@ -173,7 +194,7 @@
   }
 
   .career_detail h2 {
-    font-size: 18px;
+    font-size: 16px;
     color: #232323;
   }
 
