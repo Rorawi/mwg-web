@@ -188,10 +188,10 @@ export const BlogSwiper = () => {
 
             <h2>Teaching Media Literacy</h2>
             <p>{length ? text : `${text.slice(0, maxContent)}...`}</p>
-            <a href="#">
+            <Link to="/blog">
               Read More
               <AiOutlineArrowRight />
-            </a>
+            </Link>
           </div>
         </SwiperSlide>
 
@@ -215,10 +215,10 @@ export const BlogSwiper = () => {
 
             <h2>Teaching Media Literacy</h2>
             <p>{length ? text : `${text.slice(0, maxContent)}...`}</p>
-            <a href="#">
+            <Link to="/blog">
               Read More
               <AiOutlineArrowRight />
-            </a>
+            </Link>
           </div>
         </SwiperSlide>
 
@@ -242,10 +242,10 @@ export const BlogSwiper = () => {
 
             <h2>Teaching Media Literacy</h2>
             <p>{length ? text : `${text.slice(0, maxContent)}...`}</p>
-            <a href="#">
+            <Link to="/blog">
               Read More
               <AiOutlineArrowRight />
-            </a>
+            </Link>
           </div>
         </SwiperSlide>
 
@@ -269,10 +269,10 @@ export const BlogSwiper = () => {
 
             <h2>Teaching Media Literacy</h2>
             <p>{length ? text : `${text.slice(0, maxContent)}...`}</p>
-            <a href="#">
+            <Link to="/blog">
               Read More
               <AiOutlineArrowRight />
-            </a>
+            </Link>
           </div>
         </SwiperSlide>
 
@@ -296,10 +296,10 @@ export const BlogSwiper = () => {
 
             <h2>Teaching Media Literacy</h2>
             <p>{length ? text : `${text.slice(0, maxContent)}...`}</p>
-            <a href="#">
+            <Link to="/blog">
               Read More
               <AiOutlineArrowRight />
-            </a>
+            </Link>
           </div>
         </SwiperSlide>
         <SwiperSlide className={styles.blog_card_box}>
@@ -322,10 +322,10 @@ export const BlogSwiper = () => {
 
             <h2>Teaching Media Literacy</h2>
             <p>{length ? text : `${text.slice(0, maxContent)}...`}</p>
-            <a href="#">
+            <Link to="/blog">
               Read More
               <AiOutlineArrowRight />
-            </a>
+            </Link>
           </div>
         </SwiperSlide>
 

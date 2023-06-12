@@ -55,22 +55,22 @@ const Navbar = () => {
             <Link to="/about">About Us</Link>
           </li>
           <li>
-            <a href="#">Our Services</a>
+            <Link to="/services">Our Services</Link>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <Link to="/project">Projects</Link>
           </li>
           <li>
             <a href="#">Events</a>
           </li>
           <li>
-            <a href="#">Career</a>
+            <Link to="/career">Career</Link>
           </li>
           <li>
-            <a href="#">Blog</a>
+            <Link to="/blog">Blog</Link>
           </li>
           <li>
-            <a href="#">Contact Us</a>
+            <Link to="/contact">Contact Us</Link>
           </li>
         </ul>
       </nav>

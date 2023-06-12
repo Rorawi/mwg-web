@@ -90,24 +90,6 @@
   cursor: pointer;
 }
 
-/* .card_box .text_box button::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -20px;
-    width: 33%;
-    height: 100%;
-    z-index: -1;
-    transform: skew(-29deg);
-    padding-left: 20px;
-    background-color: #000;
-    transition: .3s;
-
-  } */
-
-/* .card_box .text_box button:hover button::after {
-    background-color: #e6cf21;
-  } */
 
 .card_box .text_box button:hover {
   background-color: #151515;
