@@ -64,16 +64,26 @@ const Navbar = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <div className={styles.dropdownItem} onClick={toggleDropdown}>
+            <div
+              className={styles.dropdownItem}
+              // onMouseEnter={toggleDropdown}
+              onClick={toggleDropdown} // Uncomment this line if you also want the dropdown to toggle on click
+            >
               About Us
               <div
-                className={
-                  showDropdown
-                    ? styles.dropdownContentVisible
-                    : styles.dropdownContent
-                }
+                // className={
+                //   showDropdown
+                //     ? styles.dropdownContentVisible
+                //     : styles.dropdownContent
+                // }
               >
-                <ul>
+                <ul
+                  className={
+                    showDropdown
+                      ? styles.dropdownContentVisible
+                      : styles.dropdownContent
+                  }
+                >
                   <li>
                     <Link to="/about/team">Our Team</Link>
                   </li>
@@ -99,7 +109,7 @@ const Navbar = () => {
             <Link to="/career">Career</Link>
           </li>
           <li>
-            <Link to="/blog">Blog</Link>
+            <Link to="/blogcomp">Blog</Link>
           </li>
           <li>
             <Link to="/contact">Contact Us</Link>

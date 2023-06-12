@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 const TeamSection = () => {
   return (
     <>
-      <section className={styles.team_sec}>
+      <section className={styles.team_sec} id="team">
         <div className={styles.text_box}>
            <div>
            <h2>// Our Strong Team</h2>

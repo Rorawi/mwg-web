@@ -63,3 +63,18 @@ text-align: center;
 .testimonial_sec .text_box h1 span{
     color: #f9af1a;
 }
+
+
+@media screen and (max-width: 414px) {
+  .testimonial_sec {
+    background: #ffbf0040;
+      padding: 25px;
+      position: relative;
+      overflow: hidden;
+  }
+
+  .testimonial_sec .img_div img , .testimonial_sec .img_div_1 img {
+    height: 190px;
+  }
+  
+}
