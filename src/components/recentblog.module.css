@@ -1,0 +1,38 @@
+.container {
+  /* margin-top: 30px; */
+  width: 100%;
+  padding: 40px 50px;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  background-color: #ffffffe4;
+  margin:  0 20px;
+
+  border: 1px solid #e0ddddb8;
+
+}
+
+.sectionTitle {
+  color: #232323;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.blogList {
+  display: flex;
+  flex-direction: column;
+}
+
+.blogItem {
+  margin-bottom: 15px;
+}
+
+.blogTitle {
+  color: #ffc107;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.blogSubtext {
+  color: #232323;
+  font-size: 14px;
+}
