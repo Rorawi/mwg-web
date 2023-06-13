@@ -57,6 +57,8 @@ a {
 
 .navbar_links a::before {
   content: "";
+  box-sizing: inherit;
+
   max-width: 50px;
   height: 2px;
   background-color: #fff;
@@ -70,6 +72,7 @@ a {
 .navbar_links a:hover::before {
   width: 100%;
 }
+
 
 /* Scrolled (Active) header */
 .scrolledHeader {

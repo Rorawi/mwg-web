@@ -9,8 +9,10 @@ import Projects from "./components/Projects";
 import ContactUs from "./components/ContactUs";
 import Blog from "./components/Blog";
 import Career from "./components/Career";
-import BlogLinkComponent from "./components/BlogLinkComponent";
+import BlogLinkComponent from "./components/BlogSection";
 import TeamSection from "./components/Team";
+import MainBlog from "./components/MainBlog";
+import SingleBlogPost from "./components/SingleBlogPost";
 
 
 const Router = () => {
@@ -28,6 +30,8 @@ const Router = () => {
           <Route path="/contact" element={<ContactUs/>} />
           <Route path="/career" element={<Career/>} />
           <Route path="/team" element={<TeamSection/>} />
+          <Route path="/blog" element={<MainBlog/>}/>
+          <Route path="/singleblog" element={<SingleBlogPost/>} />
         </Routes>
         <Footer/>
       </BrowserRouter>

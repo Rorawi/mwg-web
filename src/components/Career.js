@@ -44,7 +44,7 @@ We are looking forward to working with smart, and proactive graduates.
 
           </p>
 
-          <Link to="/contact">
+          <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfE3hhIEr5sT2Z_4_9fMFXG_by2ubMepgngmWKiC2UP7ok4Vw/viewform">
           <button>
             Join Our Team
             <div className={styles.svg_div}>

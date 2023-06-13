@@ -1,16 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../components/contact.module.css";
 import img1 from "../assets/mwg-swiper1.jpg";
 import { BiMailSend, BiPhoneCall, BiWorld } from "react-icons/bi";
+import emailjs from "@emailjs/browser"
 
 import Map from "./Map";
 
 function ContactUs() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+  const [sentmessage,setSentMessage] = useState(false)
+
+  // const submit = (e) => {
+  //   e.preventDefault();
+  //   console.log(name, email, phone, message);
+  //   setName("");
+  //   setEmail("");
+  //   setPhone("");
+  //   setMessage("");
+  // };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    const form = e.target;
+
+    emailjs
+      .sendForm("service_ibep18s", "template_lxxs1s8", form, "UX2qzirfmkrZ_N-CG")
+      .then((response) => {
+        console.log("Email sent successfully!", response.status, response.text);
+        setSentMessage(!sentmessage)
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
+
+    form.reset();
+
+    setName("");
+    setEmail("");
+    setPhone("");
+    setMessage("");
+  };
+
+  
+  
+  
   return (
     <>
-      <div class={styles.banner}>
+      <div className={styles.banner}>
         <div className={styles.overlay}>
-          <div class={styles.banner_text}>
+          <div className={styles.banner_text}>
             <h1>Mobile Web Ghana</h1>
             <h3>| Contact Us</h3>
           </div>
@@ -40,7 +81,7 @@ function ContactUs() {
               </div>
             </div>
             <div className={styles.svgS_div}>
-            <BiPhoneCall />
+              <BiPhoneCall />
               <div className={styles.text_box}>
                 <h1>Our Phone</h1>
                 <span>+233 2677 77887</span>
@@ -48,7 +89,7 @@ function ContactUs() {
             </div>
 
             <div className={styles.svgS_div}>
-            <BiMailSend />
+              <BiMailSend />
               <div className={styles.text_box}>
                 <h1>Our Mail</h1>
                 <span>info@mobilewebghana.org</span>
@@ -58,7 +99,7 @@ function ContactUs() {
         </div>
 
         <section className={styles.formDiv}>
-          <form>
+          <form id="contactForm" onSubmit={sendEmail}>
             <div className={styles.contact_details}>
               <h2>Get in touch with us today! </h2>
               <h1>We're ready to help you get started.</h1>
@@ -74,9 +115,10 @@ function ContactUs() {
               aria-required="true"
               aria-invalid="false"
               placeholder="Your Name"
-              value=""
+              value={name}
               type="text"
-              name="sub"
+              name="from_name"
+              onChange={(e) => setName(e.target.value)}
             />
 
             <input
@@ -85,9 +127,10 @@ function ContactUs() {
               aria-required="true"
               aria-invalid="false"
               placeholder="Your Email"
-              value=""
+              value={email}
               type="email"
-              name="sub2"
+              name="from_email"
+              onChange={(e) => setEmail(e.target.value)}
             />
 
             <input
@@ -96,24 +139,28 @@ function ContactUs() {
               aria-required="true"
               aria-invalid="false"
               placeholder="Phone Number"
-              value=""
+              value={phone}
               type="text"
-              name="sub3"
+              name="from_phone"
+              onChange={(e) => setPhone(e.target.value)}
             />
             <textarea
               cols="40"
               rows="10"
               className={styles.form_control}
               aria-invalid="false"
-              name="placeholder"
-            >
-              Your Message
-            </textarea>
+              name="message"
+              placeholder="Your message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            ></textarea>
 
             <input
               type="submit"
               id={styles.submit_btn}
               className={styles.form_control}
+              // onClick={sendEmail}
+              value="Send"
             />
           </form>
         </section>

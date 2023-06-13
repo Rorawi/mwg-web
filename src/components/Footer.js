@@ -1,17 +1,39 @@
 
 
-import React from "react";
+import React ,{useState}from "react";
 import { FiMail, FiArrowRight } from "react-icons/fi";
-import { FaGithub, FaInstagram, FaLinkedin,FaFacebookSquare} from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin,FaFacebookSquare,FaTwitter} from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import styles from "../components/footer.module.css";
 import { Link } from "react-router-dom";
 import mwgLogo from "../assets/mwg-logo.png";
 
+import emailjs from "@emailjs/browser"
+
+
 const Footer = () => {
+  const [email, setEmail] = useState("");
+
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    const form = e.target;
+
+    emailjs
+      .sendForm("service_ibep18s", "template_lxxs1s8", form, "UX2qzirfmkrZ_N-CG")
+      .then((response) => {
+        console.log("Email sent successfully!", response.status, response.text);
+        // setSentMessage(!sentmessage)
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
+
+    form.reset();
+  };
   return (
     <footer>
-      <div className={styles.talk_sec}>
+      {/* <div className={styles.talk_sec}>
         <p>
           Let's
           <span> Talk</span>
@@ -19,12 +41,22 @@ const Footer = () => {
 
         <div className={styles.message_us}>
           <FiMail className={styles.mail_svg} />
-          <input type="text" placeholder="Your Email Address" />
+          <input
+              size="40"
+              className={styles.form_control}
+              aria-required="true"
+              aria-invalid="false"
+              placeholder="Your Email"
+              value={email}
+              type="email"
+              name="from_email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
           <button>
             <FiArrowRight />
           </button>
         </div>
-      </div>
+      </div> */}
 
       <section className={styles.details}>
         <div className={styles.profile}>
@@ -44,21 +76,21 @@ const Footer = () => {
         {/* Work enquiries */}
         <div className={styles.work_enquiries}>
           <h2>Work enquiries</h2>
-          <p className="font-poppins text-[14px]">
+          <p>
             Do you have any ideas for us?
             <br />
             We would love to welcome your suggestions
-            <p>
+            <br/>
               <span className=" font-bold">Email: </span>
-              <a href="#">mwg@gmail.com</a>
-            </p>
+              <a href="#">mobilewebghana@gmail.com</a>
+            
           </p>
         </div>
 
         {/* Address */}
         <div className={styles.address}>
           <h2>My Address</h2>
-          <p>GA-0000 000,StreetName St.</p>
+          <p>GA-0000 000,Dar es Salaam St.</p>
           <p>Ghana</p>
         </div>
 
@@ -75,6 +107,10 @@ const Footer = () => {
             </Link>
             <Link to="https://www.linkedin.com/company/mobile-web-ghana/">
               <FaLinkedin />
+            </Link>
+
+            <Link to="https://www.linkedin.com/company/mobile-web-ghana/">
+              <FaTwitter />
             </Link>
             {/* <SiGmail className="mx-2.5 text-[17px] mb-[5px] " /> */}
           </div>
