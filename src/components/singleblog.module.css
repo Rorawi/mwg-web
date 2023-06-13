@@ -146,3 +146,16 @@
 
 
 /* Add additional styles for comments and social media icons/buttons */
+
+
+@media screen and (max-width: 890px) {
+    .flex_Div {
+      flex-wrap: wrap;
+      
+        margin: 150px 0px;
+      }
+
+      .container {
+        margin-bottom: 30px;
+      }
+}
