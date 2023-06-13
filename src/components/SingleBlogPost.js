@@ -4,6 +4,9 @@ import style from './recentblog.module.css';
 import profileImage from "../assets/profile.jpg";
 import blogImage from "../assets/mcare.jpg";
 import img1 from "../assets/mwg-swiper1.jpg";
+import { FaGithub, FaInstagram, FaLinkedin,FaFacebookSquare,FaTwitter} from "react-icons/fa";
+import { Link } from "react-router-dom";
+import CommentBlock from "./Comment";
 
 const SingleBlogPost = () => {
   return (
@@ -65,14 +68,28 @@ const SingleBlogPost = () => {
           <div className={styles.commentSection}>
             <h2 className={styles.commentTitle}>Comments</h2>
             {/* Add comment components or form here */}
+            <CommentBlock/>
           </div>
           <div className={styles.socialMedia}>
             <h3>Share this post:</h3>
-            {/* Add social media icons or buttons here */}
+            <Link to="https://www.facebook.com/">
+              <FaFacebookSquare/>
+            </Link>
+
+            <Link to="https://www.instagram.com/">
+              <FaInstagram />
+            </Link>
+            <Link to="https://www.linkedin.com/">
+              <FaLinkedin />
+            </Link>
+
+            <Link to="https://www.linkedin.com/">
+              <FaTwitter />
+            </Link>
           </div>
         </div>
 
-
+      
         <RecentBlogSection />
       </div>
     </>
@@ -108,6 +125,7 @@ export const RecentBlogSection = () => {
   ];
 
   return (
+    <>
     <div className={style.container}>
       <h2 className={style.sectionTitle}>Recent Blogs</h2>
       <div className={style.blogList}>
@@ -120,7 +138,34 @@ export const RecentBlogSection = () => {
           </div>
         ))}
       </div>
+
+      <h2 className={style.sectionTitle}>Recent Blogs</h2>
+
+      <div className={style.blogList}>
+        {blogs.map((blog) => (
+          <div key={blog.id} className={style.blogItem}>
+            <h3 className={style.blogTitle}>{blog.title}</h3>
+            <p className={style.blogSubtext}>
+              {blog.date} | {blog.time}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      <h2 className={style.sectionTitle}>Recent Blogs</h2>
+
+      <div className={style.blogList}>
+        {blogs.map((blog) => (
+          <div key={blog.id} className={style.blogItem}>
+            <h3 className={style.blogTitle}>{blog.title}</h3>
+            <p className={style.blogSubtext}>
+              {blog.date} | {blog.time}
+            </p>
+          </div>
+        ))}
+      </div>
     </div>
+    </>
   );
 };
 

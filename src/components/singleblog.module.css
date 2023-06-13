@@ -75,13 +75,14 @@
 }
 
 .container {
+    width: 70%;
   background-color: #fff;
   padding: 20px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   /* max-width: 1000px; */
 
-  margin:  0 20px;
+  margin:  0 0px 0 20px;
   border: 1px solid #e0ddddb8;
 
 }
@@ -144,7 +145,18 @@
   margin-top: 30px;
 }
 
+.socialMedia svg {
+    color: #232323;
+    transition: .3s;
+    margin:  10px;
 
+    font-size: 20px;
+}
+
+
+.socialMedia svg:hover {
+color: #ffc107;
+}
 /* Add additional styles for comments and social media icons/buttons */
 
 
@@ -157,5 +169,6 @@
 
       .container {
         margin-bottom: 30px;
+        width: 100%;
       }
 }

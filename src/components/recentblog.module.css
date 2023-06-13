@@ -1,25 +1,28 @@
 .container {
   /* margin-top: 30px; */
-  width: 100%;
-  padding: 40px 50px;
-  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
+  width: 30%;
+
   height: 100%;
   background-color: #ffffffe4;
   margin:  0 20px;
 
-  border: 1px solid #e0ddddb8;
-
+  
 }
 
 .sectionTitle {
-  color: #232323;
-  font-size: 24px;
-  margin-bottom: 10px;
+    color: #232323;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .blogList {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 50px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0ddddb8;
+
+    margin-bottom: 20px;
 }
 
 .blogItem {
@@ -35,4 +38,12 @@
 .blogSubtext {
   color: #232323;
   font-size: 14px;
+}
+
+
+@media screen and (max-width: 890px) {
+    .container {
+        width: 100%;
+
+    }
 }
