@@ -1,68 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./singleblog.module.css";
 import style from './recentblog.module.css';
 import profileImage from "../assets/profile.jpg";
 import blogImage from "../assets/mcare.jpg";
 import img1 from "../assets/mwg-swiper1.jpg";
-import { FaGithub, FaInstagram, FaLinkedin,FaFacebookSquare,FaTwitter} from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin,FaFacebookSquare,FaTwitter, FaSearch} from "react-icons/fa";
 import { Link } from "react-router-dom";
 import CommentBlock from "./Comment";
 
-const SingleBlogPost = () => {
+const SingleBlogPost = ({title,content,name,img,day,month,year,blogImg}) => {
+
   return (
     <>
-      <div class={styles.banner}>
-        <div className={styles.overlay}>
-          <div class={styles.banner_text}>
-            <h1>Mobile Web Ghana</h1>
-            <h3>| Our Blog</h3>
-          </div>
-        </div>
-        <div className={styles.img_div}>
-          <img src={img1} />
-        </div>
-      </div>
 
       <div className={styles.flex_Div}>
         <div className={styles.container}>
           <div className={styles.header}>
-            <h1 className={styles.title}>Blog Post Title</h1>
+            <h1 className={styles.title}>{title}</h1>
             <div className={styles.author}>
               <img
-                src={profileImage}
+                src={img}
                 alt="Profile"
                 className={styles.profileImage}
               />
-              <span className={styles.authorName}>John Doe</span>
+              <span className={styles.authorName}>{name}</span>
             </div>
-            <p className={styles.date}>Published on June 13, 2023</p>
+            <p className={styles.date}>Published on {month} {day}, {year}</p>
           </div>
           <div className={styles.content}>
-            <img src={blogImage} alt="Blog" className={styles.blogImage} />
+            <img src={blogImg} alt="Blog" className={styles.blogImage} />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
-              mauris vitae ipsum ultricies porta vel et leo. Integer scelerisque
-              risus quis quam semper, ut blandit lacus fermentum. Nullam
-              fringilla dapibus justo, sit amet facilisis lacus. Suspendisse
-              rhoncus congue dolor, in placerat nisi tincidunt ut. Phasellus
-              eget ex vitae tortor faucibus dignissim. Sed consequat diam ut
-              placerat convallis. Mauris rhoncus congue purus, a fringilla
-              mauris cursus eu. Integer tempus tortor sit amet gravida gravida.
-              Nulla ut purus velit. Duis vel velit risus. Fusce mattis, felis ut
-              luctus lacinia, ex justo pretium nibh, nec fermentum mauris risus
-              eu lorem.
+              {content}
             </p>
+            <br/>
             <p>
-              Aenean euismod eros et massa fringilla condimentum. Proin
-              accumsan, dolor eget finibus ultrices, eros mi mattis nisi, a
-              semper mauris justo id justo. Morbi ut nunc at urna auctor
-              vulputate non ut diam. Phasellus vitae augue et lectus fringilla
-              consectetur et ac purus. Aliquam sagittis semper ex, vel semper
-              purus malesuada a. Integer a iaculis risus, sit amet elementum
-              neque. Aliquam erat volutpat. Suspendisse potenti. In nec lectus
-              at arcu luctus volutpat. Integer lobortis hendrerit metus sed
-              consequat. Nam a interdum neque. Donec quis elit felis. Nam semper
-              justo vitae nisi blandit auctor.
+             {content}
             </p>
           </div>
           <div className={styles.commentSection}>
@@ -102,6 +74,14 @@ export default SingleBlogPost;
 
 
 export const RecentBlogSection = () => {
+  const [search,setSearch] = useState("")
+  const input =document.querySelector("input")
+  // const value = input.value
+
+  const Search =()=> {
+    // {value== value.toLowerCase()? "Hi": "no"}
+    console.log("Hi");
+  }
   const blogs = [
     {
       id: 1,
@@ -127,6 +107,13 @@ export const RecentBlogSection = () => {
   return (
     <>
     <div className={style.container}>
+      <div className={style.blogList}>
+          <div className={style.blogItem_search}>
+           <input type="text
+           " placeholder="Search..."/>
+           <FaSearch onClick={Search}/>
+          </div>
+      </div>
       <h2 className={style.sectionTitle}>Recent Blogs</h2>
       <div className={style.blogList}>
         {blogs.map((blog) => (
@@ -142,14 +129,18 @@ export const RecentBlogSection = () => {
       <h2 className={style.sectionTitle}>Recent Blogs</h2>
 
       <div className={style.blogList}>
-        {blogs.map((blog) => (
-          <div key={blog.id} className={style.blogItem}>
-            <h3 className={style.blogTitle}>{blog.title}</h3>
+          <div  className={style.blogItem}>
+            <h3 className={style.blogTitle}>koko</h3>
             <p className={style.blogSubtext}>
-              {blog.date} | {blog.time}
+              koose
             </p>
           </div>
-        ))}
+          <div  className={style.blogItem}>
+            <h3 className={style.blogTitle}>koko</h3>
+            <p className={style.blogSubtext}>
+              koose
+            </p>
+          </div>
       </div>
 
       <h2 className={style.sectionTitle}>Recent Blogs</h2>

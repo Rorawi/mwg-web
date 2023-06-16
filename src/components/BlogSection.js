@@ -6,9 +6,11 @@ import { Link } from "react-router-dom";
 const BlogSection = ({ children }) => {
   return (
     <>
-    <Link to="/singleblog">
-      <div className={styles.blog_section}>{children}</div>;
-    </Link>
+    {/* <Link to="/singleblog"> */}
+      <div className={styles.blog_section}>
+        {children}
+        </div>;
+    {/* </Link> */}
 
     {/* <SingleBlogPost children={children} /> */}
     </>

@@ -10,9 +10,9 @@ import Testimonial from "./Testimonial";
 export default function AboutUs() {
   return (
     <>
-      <div class={styles.banner}>
+      <div className={styles.banner}>
         <div className={styles.overlay}>
-          <div class={styles.banner_text}>
+          <div className={styles.banner_text}>
             <h1>Mobile Web Ghana</h1>
             <h3>| Who we are</h3>
           </div>

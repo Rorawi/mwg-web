@@ -8,9 +8,9 @@ import Testimonial from "./Testimonial";
 function Services() {
   return (
     <>
-      <div class={styles.banner}>
+      <div className={styles.banner}>
         <div className={styles.overlay}>
-          <div class={styles.banner_text}>
+          <div className={styles.banner_text}>
             <h1>Mobile Web Ghana</h1>
             <h3>| Our Services</h3>
           </div>

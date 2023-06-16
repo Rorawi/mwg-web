@@ -64,7 +64,8 @@ const Navbar = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <div
+          {/* <Link to="/about"> */}
+          <div
               className={styles.dropdownItem}
               // onMouseEnter={toggleDropdown}
               onClick={toggleDropdown} // Uncomment this line if you also want the dropdown to toggle on click
@@ -85,7 +86,7 @@ const Navbar = () => {
                   }
                 >
                   <li>
-                    <Link to="/about/team">Our Team</Link>
+                    <a href="/about/overview">OverView</a>
                   </li>
                   <li>
                     <Link to="/about/history">History</Link>
@@ -94,6 +95,7 @@ const Navbar = () => {
                 </ul>
               </div>
             </div>
+          {/* </Link> */}
           </li>
 
           <li>
@@ -103,7 +105,7 @@ const Navbar = () => {
             <Link to="/project">Projects</Link>
           </li>
           <li>
-            <a href="#">Events</a>
+            <a href="/event">Events</a>
           </li>
           <li>
             <Link to="/career">Career</Link>
