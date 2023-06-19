@@ -33,9 +33,6 @@ const SingleBlogPost = ({title,content,name,img,day,month,year,blogImg}) => {
               {content}
             </p>
             <br/>
-            <p>
-             {content}
-            </p>
           </div>
           <div className={styles.commentSection}>
             <h2 className={styles.commentTitle}>Comments</h2>

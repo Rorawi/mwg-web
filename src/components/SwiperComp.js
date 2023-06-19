@@ -11,6 +11,12 @@ import us_embasy_logo from "../assets/us_embasy_logo.jpg";
 import gdc_logo from "../assets/gdc_logo.png";
 import mwg_logo from "../assets/mwg-logo.png";
 
+
+import img1 from "../assets/mwg-swiper1.jpg";
+import director from "../assets/director.jpg";
+import blogImg2 from "../assets/code-for-ghana.jpg";
+import blogImg1 from "../assets/fime.jpg";
+
 import styles from "../components/swiper.module.css";
 // Import Swiper styles
 import "swiper/css";
@@ -127,7 +133,62 @@ export const SwiperComp = () => {
     </div>
   );
 };
+export const ImageSwiper = () => {
+  const swiperRef = useRef(null);
 
+  const handlePaginationClick = (index) => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideTo(index);
+    }
+  };
+
+  return (
+    <div>
+      <Swiper
+        autoplay={{ delay: 3000 }} // Set the desired autoplay delay in milliseconds
+        navigation
+        pagination={{ clickable: true }}
+        onSwiper={(swiper) => console.log(swiper)}
+        loop
+        disableOnInteraction
+        onSlideChange={() => console.log("slide change")}
+        className={styles.image_container}
+      >
+        <SwiperSlide className={styles.image}>
+          <img src={img1} alt="Image" />
+        </SwiperSlide>
+        <SwiperSlide className={styles.image}>
+          <img src={img1} alt="Image" />
+        </SwiperSlide>
+        <SwiperSlide className={styles.image}>
+          <img src={img1} alt="Image" />
+        </SwiperSlide>
+        <SwiperSlide className={styles.image}>
+          <img src={img1} alt="Image" />
+        </SwiperSlide>
+      </Swiper>
+
+      <div className={styles.pagination}>
+        <button
+          className={styles.paginationButton}
+          onClick={() => handlePaginationClick(0)}
+        ></button>
+        <button
+          className={styles.paginationButton}
+          onClick={() => handlePaginationClick(1)}
+        ></button>
+        <button
+          className={styles.paginationButton}
+          onClick={() => handlePaginationClick(2)}
+        ></button>
+        <button
+          className={styles.paginationButton}
+          onClick={() => handlePaginationClick(3)}
+        ></button>
+      </div>
+    </div>
+  );
+};
 export const BlogSwiper = () => {
   SwiperCore.use([Pagination]);
   const [length, setLength] = useState(false);
@@ -620,7 +681,7 @@ export const TestimonialSwiper = () => {
             className={styles.paginationButton}
             onClick={() => handlePaginationClick(6)}
           ></button>
-          <button
+          {/* <button
             className={styles.paginationButton}
             onClick={() => handlePaginationClick(8)}
           ></button>
@@ -635,7 +696,7 @@ export const TestimonialSwiper = () => {
           <button
             className={styles.paginationButton}
             onClick={() => handlePaginationClick(0)}
-          ></button>
+          ></button> */}
         </div>
         {/* edit swiper */}
       </Swiper>

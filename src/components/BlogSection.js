@@ -7,7 +7,7 @@ const BlogSection = ({ children }) => {
   return (
     <>
     {/* <Link to="/singleblog"> */}
-      <div className={styles.blog_section}>
+      <div className={styles.blog_section} >
         {children}
         </div>;
     {/* </Link> */}

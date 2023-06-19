@@ -60,7 +60,7 @@ const Navbar = () => {
           <div className={styles.menu_btn}>
             <FaTimes className={styles.menu_btn_svg} onClick={toggleNav} />
           </div>
-          <li>
+          <li onClick={toggleNav}>
             <Link to="/">Home</Link>
           </li>
           <li>
@@ -85,10 +85,10 @@ const Navbar = () => {
                       : styles.dropdownContent
                   }
                 >
-                  <li>
-                    <a href="/about/overview">OverView</a>
+                  <li onClick={toggleNav}>
+                    <a href="/overview">OverView</a>
                   </li>
-                  <li>
+                  <li onClick={toggleNav}>
                     <Link to="/about/history">History</Link>
                   </li>
                   {/* Add more dropdown items as needed */}
@@ -98,22 +98,22 @@ const Navbar = () => {
           {/* </Link> */}
           </li>
 
-          <li>
+          <li onClick={toggleNav}>
             <Link to="/services">Our Services</Link>
           </li>
-          <li>
+          <li onClick={toggleNav}>
             <Link to="/project">Projects</Link>
           </li>
-          <li>
+          <li onClick={toggleNav}>
             <a href="/event">Events</a>
           </li>
-          <li>
+          <li onClick={toggleNav}>
             <Link to="/career">Career</Link>
           </li>
-          <li>
+          <li onClick={toggleNav}>
             <Link to="/blog">Blog</Link>
           </li>
-          <li>
+          <li onClick={toggleNav}>
             <Link to="/contact">Contact Us</Link>
           </li>
         </ul>

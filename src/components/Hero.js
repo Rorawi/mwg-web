@@ -4,6 +4,7 @@ import styles from "../components/carousel.module.css";
 import { FaArrowRight } from "react-icons/fa";
 
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { ImageSwiper } from "./SwiperComp";
 
 export default function Hero() {
   const [text] = useTypewriter({
@@ -22,6 +23,7 @@ export default function Hero() {
     <div>
       <div className={styles.image_container}>
         <img src={img1} alt="Image" className={styles.image} />
+        {/* <ImageSwiper /> */}
         <div className={styles.text_overlay}>
           <div className={styles.glass_effect}>
             <div className={styles.text}>

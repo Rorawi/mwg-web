@@ -95,34 +95,6 @@
   background-color: #151515;
 }
 
-/* Custom styles for swiper pagination */
-.swiper-pagination-container {
-  position: fixed;
-  bottom: 20px; /* Adjust the positioning according to your needs */
-  right: 20px; /* Adjust the positioning according to your needs */
-  z-index: 100;
-}
-
-.swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  background-color: #000 !important;
-  opacity: 0.5;
-  transition: opacity 0.3s ease;
-  border-radius: 50%;
-  margin: 0 2px;
-  cursor: pointer;
-}
-
-/* .swiper-pagination-bullet {
-
-} */
-
-.swiper-pagination-bullet-active {
-  opacity: 1;
-  background-color: #ff0000; /* Set your desired active color here */
-}
-
 /*Blog Swiper*/
 .blog_card_box {
   width: 323px;
@@ -189,19 +161,20 @@
   display: flex;
 }
 
+.blog_card_box .text_box svg {
+  transition: 0.3s ease-in-out;
+  align-self: center;
+  margin-left: 4px;
+}
+
 .blog_card_box .text_box a:hover svg {
   transform: translateX(5px);
-  transition: 0.3s ease-in-out;
 }
 
 .swiper-pagination {
   background-color: #f9af1a !important;
 }
 
-.blog_card_box .text_box svg {
-  align-self: center;
-  margin-left: 4px;
-}
 
 .logo {
   filter: grayscale(80%);
@@ -280,6 +253,17 @@
   font-size: 14px;
   font-weight: 420;
   color: #fda900;
+}
+
+/* .image_container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 60%;
+} */
+
+.image {
+
 }
 
 @media screen and (max-width: 769px) {

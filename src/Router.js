@@ -15,6 +15,7 @@ import SingleBlogPost from "./components/SingleBlogPost";
 import ScrollToTop from "./components/ScrollToTop";
 import Testimonial from "./components/Testimonial";
 import Events from "./components/Events";
+import OverView from "./components/OverView";
 
 
 const Router = () => {
@@ -26,9 +27,9 @@ const Router = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} >
-            <Route path="overview" element={<TeamSection/>} />
             <Route path="history" element={<Testimonial/>}/>
           </Route>
+            <Route path="/overview" element={<OverView/>} />
           <Route path="/event" element={<Events/>} />
           <Route path="/services" element={<Services/>} />
           <Route path="/blogcomp" element={<BlogLinkComponent/>} />
