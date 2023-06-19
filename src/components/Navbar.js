@@ -89,7 +89,7 @@ const Navbar = () => {
                     <a href="/overview">OverView</a>
                   </li>
                   <li onClick={toggleNav}>
-                    <Link to="/about/history">History</Link>
+                    <Link to="/about">About Us</Link>
                   </li>
                   {/* Add more dropdown items as needed */}
                 </ul>

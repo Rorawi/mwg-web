@@ -111,7 +111,7 @@ export const RecentBlogSection = () => {
            <FaSearch onClick={Search}/>
           </div>
       </div>
-      <h2 className={style.sectionTitle}>Recent Blogs</h2>
+      <h2 className={style.sectionTitle}>More Blogs</h2>
       <div className={style.blogList}>
         {blogs.map((blog) => (
           <div key={blog.id} className={style.blogItem}>
@@ -127,20 +127,22 @@ export const RecentBlogSection = () => {
 
       <div className={style.blogList}>
           <div  className={style.blogItem}>
-            <h3 className={style.blogTitle}>koko</h3>
+            <h3 className={style.blogTitle}>
+            Teaching Media Literacy
+            </h3>
             <p className={style.blogSubtext}>
-              koose
             </p>
           </div>
           <div  className={style.blogItem}>
-            <h3 className={style.blogTitle}>koko</h3>
+            <h3 className={style.blogTitle}>
+            Partnering for Progress: Africa Digital Skills Conference 2023 Empowering Africa’s Digital Future.
+            </h3>
             <p className={style.blogSubtext}>
-              koose
             </p>
           </div>
       </div>
 
-      <h2 className={style.sectionTitle}>Recent Blogs</h2>
+      <h2 className={style.sectionTitle}>More Blogs</h2>
 
       <div className={style.blogList}>
         {blogs.map((blog) => (

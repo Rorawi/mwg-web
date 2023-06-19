@@ -1,7 +1,9 @@
 import React from "react";
 import styles from "../components/overview.module.css";
 import img1 from "../assets/mwg-swiper1.jpg";
-import { FaPeopleCarry, FaBullseye,FaLightbulb } from "react-icons/fa";
+import experience from "../assets/experience.png";
+import path from "../assets/path.png";
+import { FaPeopleCarry, FaBullseye, FaLightbulb } from "react-icons/fa";
 
 function OverView() {
   return (
@@ -50,8 +52,66 @@ function OverView() {
           </div>
         </section>
 
+        <section className={styles.overview}>
+          <div className={styles.text_box}>
+            <h2>// Company Overview</h2>
+            <h1>
+              Building the capacity of <span>Tech-enthusiasts</span> to meet the
+              demands of the tech industry.
+            </h1>
+          </div>
 
-        
+          <div className={styles.overview_statement_div}>
+            <div className={styles.overview_statement}>
+              <p>
+                Our goal is to build the capacity of young tech-enthusiasts to
+                be able to meet the demands of the tech industry in Ghana and
+                beyond. We undertake some “ICT for development” projects that
+                are aimed at improving social-economic and political development
+                with particular emphasis on helping the marginalized in society.
+                Creating a conducive working environment for tech-businesses is
+                our priority and this we ensure by offering them co-working
+                space, offices and start-up mentoring.
+              </p>
+
+              <div className={styles.img_div}>
+                <img src={experience} />
+              </div>
+            </div>
+            <div className={styles.overview_statement_reverse}>
+              <p>
+                Our goal is to build the capacity of young tech-enthusiasts to
+                be able to meet the demands of the tech industry in Ghana and
+                beyond. We undertake some “ICT for development” projects that
+                are aimed at improving social-economic and political development
+                with particular emphasis on helping the marginalized in society.
+                Creating a conducive working environment for tech-businesses is
+                our priority and this we ensure by offering them co-working
+                space, offices and start-up mentoring.
+              </p>
+
+              <div className={styles.img_div}>
+                <img src={path} />
+              </div>
+            </div>
+            <div className={styles.overview_statement}>
+              <p>
+                Our goal is to build the capacity of young tech-enthusiasts to
+                be able to meet the demands of the tech industry in Ghana and
+                beyond. We undertake some “ICT for development” projects that
+                are aimed at improving social-economic and political development
+                with particular emphasis on helping the marginalized in society.
+                Creating a conducive working environment for tech-businesses is
+                our priority and this we ensure by offering them co-working
+                space, offices and start-up mentoring.
+              </p>
+
+              <div className={styles.img_div}>
+                <img src={experience} />
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </>
   );
