@@ -462,14 +462,14 @@ export const LogoSwiper = () => {
         loop={true}
         autoplay={true}
         disableoninteraction="false"
-        onSlideChange={() => console.log("slide change")}
+        // onSlideChange={() => console.log("slide change")}
         className={[styles.swiper, styles.logo_swiper]}
       >
         <SwiperSlide className={styles.logo_swiperslide}>
           <img src={mastercard} className={styles.logo} />
         </SwiperSlide>
         <SwiperSlide className={styles.logo_swiperslide}>
-          <img src={odc_logo} className={styles.logo} />
+          <img src={odc_logo} className={styles.logo1} />
         </SwiperSlide>
         <SwiperSlide className={styles.logo_swiperslide}>
           <img src={amspaces_logo} className={styles.logo} />

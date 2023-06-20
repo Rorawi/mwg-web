@@ -8,21 +8,21 @@ function Events() {
   const events = [
     {
       id: 1,
-      eventName: "Youth Media Literacy",
+      eventName: "Education U.S.A",
       time: "10AM GMT",
       eventOverview:
         "This is an event mainly for the youth which seeks to increase the capacity of youths to consume and disseminate media contents responsibly.",
         signUpLink: "https://tailwindcss.com/docs/box-shadow"
     },
-    {
-      id: 2,
-      eventName: "U.S Embassy",
-      time: "9AM GMT",
-      eventOverview:
-        "This is an event mainly for  which seeks to increase the capacity of youths to consume and disseminate media contents responsibly.",
-        signUpLink: "https://www.youtube.com/watch?v=pEy-wOiMJps"
+    // {
+    //   id: 2,
+    //   eventName: "U.S Embassy",
+    //   time: "9AM GMT",
+    //   eventOverview:
+    //     "This is an event mainly for  which seeks to increase the capacity of youths to consume and disseminate media contents responsibly.",
+    //     signUpLink: "https://www.youtube.com/watch?v=pEy-wOiMJps"
 
-    },
+    // },
   ];
   return (
     <>

@@ -177,10 +177,18 @@
 
 
 .logo {
-  filter: grayscale(80%);
-  opacity: 0.5;
+  /* filter: grayscale(80%);
+  opacity: 0.5; */
   width: 100%;
   max-width: 90px;
+}
+
+.logo1 {
+  /* filter: grayscale(80%);
+  opacity: 0.5; */
+  width: 100%;
+  max-width: 200px;
+  margin-top: 20px;
 }
 
 .logo_swiper {

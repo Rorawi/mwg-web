@@ -92,7 +92,7 @@ function ContactUs() {
               <BiMailSend />
               <div className={styles.text_box}>
                 <h1>Our Mail</h1>
-                <span>info@mobilewebghana.org</span>
+                <span>info[at]mobilewebghana.org</span>
               </div>
             </div>
           </div>
