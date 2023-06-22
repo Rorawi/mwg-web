@@ -124,6 +124,7 @@ margin-bottom: 20px;
   margin-top: 0;
   line-height: 1.2;
   font-weight: 700;
+  /* flex-wrap: balance; */
 }
 
 .overview .text_box h1 span {
