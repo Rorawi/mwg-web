@@ -11,7 +11,6 @@ import us_embasy_logo from "../assets/us_embasy_logo.jpg";
 import gdc_logo from "../assets/gdc_logo.png";
 import mwg_logo from "../assets/mwg-logo.png";
 
-
 import img1 from "../assets/mwg-swiper1.jpg";
 import director from "../assets/director.jpg";
 import blogImg2 from "../assets/code-for-ghana.jpg";
@@ -30,6 +29,7 @@ import { Link } from "react-router-dom";
 import { BsFillPersonFill, BsClockFill } from "react-icons/bs";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { FaStar, FaStarHalf } from "react-icons/fa";
+import { Reviews } from "./review";
 
 export const SwiperComp = () => {
   const responsiveOptions = {
@@ -201,8 +201,12 @@ export const BlogSwiper = () => {
     }
   };
 
-  const text =
-    "Media literacy skills have become increasingly essential in today’s digital age, where young people are constantly bombarded with information from various media sources. In Ghana, Mobile Web Ghana is actively involved in promoting media literacy among youth through our youth media literacy project. This initiative aims to equip young people with the necessary skills to critically analyze and navigate the media landscape, empowering them to become informed and responsible media consumers.";
+  const text = `Media literacy skills have become increasingly essential in today’s
+     digital age, where young people are constantly bombarded with information from various media 
+     sources. In Ghana, Mobile Web Ghana is actively involved in promoting media literacy among youth
+      through our youth media literacy project. This initiative aims to equip young people with the necessary 
+      skills to critically analyze and navigate the 
+    media landscape, empowering them to become informed and responsible media consumers.`;
   const responsiveOptions = {
     1024: {
       slidesPerView: 3,
@@ -525,140 +529,32 @@ export const TestimonialSwiper = () => {
         effect="fade"
         className={styles.swiper}
       >
-        <SwiperSlide className={styles.testimonial_card_box}>
-          <div className={styles.img_div}>
-            <img src={profile} alt="our image" />
-          </div>
+        {Reviews.map((review) => {
+          return (
+            <SwiperSlide className={styles.testimonial_card_box}>
+              <div className={styles.img_div}>
+                <img src={profile} alt="our image" />
+              </div>
 
-          <div className={styles.text_box}>
-            <p>
-              Mobile Web Ghana has changed lives and inspired hope. Their
-              impactful work is making a difference in our community.
-            </p>
-            <div className={styles.stars}>
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStarHalf />
-            </div>
-            <h2>Adwoa</h2>
-            <h3>Frontend Developer</h3>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className={styles.testimonial_card_box}>
-          <div className={styles.img_div}>
-            <img src={profile} alt="our image" />
-          </div>
+              <div className={styles.text_box}>
+                <p>
+                  {review.content}
+                </p>
+                <div className={styles.stars}>
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStarHalf />
 
-          <div className={styles.text_box}>
-            <p>
-              I am incredibly grateful for the support and resources provided by
-              Mobile Web Ghana. They are truly making a positive impact in the lives
-              of those in need.{" "}
-            </p>
-            <div className={styles.stars}>
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStarHalf />
-            </div>
-            <h2>Asantewaa</h2>
-            <h3>App Developer</h3>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide className={styles.testimonial_card_box}>
-          <div className={styles.img_div}>
-            <img src={profile} alt="our image" />
-          </div>
-
-          <div className={styles.text_box}>
-            <p>
-              Choosing to work with Mobile Web Ghana has been a life-changing
-              decision. Their dedication and passion for helping others is
-              commendable.
-            </p>
-            <div className={styles.stars}>
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStarHalf />
-            </div>
-            <h2>Asante</h2>
-            <h3>Backend Developer</h3>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide className={styles.testimonial_card_box}>
-          <div className={styles.img_div}>
-            <img src={profile} alt="our image" />
-          </div>
-
-          <div className={styles.text_box}>
-            <p>
-              I have witnessed firsthand the incredible work done by Mobile Web Ghana.
-              Their commitment to making a difference is truly inspiring.
-            </p>
-            <div className={styles.stars}>
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStarHalf />
-            </div>
-            <h2>Winifred</h2>
-            <h3>Senior Frontend Developer</h3>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide className={styles.testimonial_card_box}>
-          <div className={styles.img_div}>
-            <img src={profile} alt="our image" />
-          </div>
-
-          <div className={styles.text_box}>
-            <p>
-              Being involved with Mobile Web Ghana has been an enriching experience.
-              They have created a platform for change and are transforming
-              lives.{" "}
-            </p>
-            <div className={styles.stars}>
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStarHalf />
-            </div>
-            <h2>Winifred</h2>
-            <h3>Senior Frontend Developer</h3>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide className={styles.testimonial_card_box}>
-          <div className={styles.img_div}>
-            <img src={profile} alt="our image" />
-          </div>
-
-          <div className={styles.text_box}>
-            <p>
-              I can confidently say that Mobile Web Ghana is an organization that
-              truly cares. Their efforts to bring about social change are
-              commendable, and I am proud to support their mission.
-            </p>
-            <div className={styles.stars}>
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStarHalf />
-            </div>
-            <h2>Winifred</h2>
-            <h3>Senior Frontend Developer</h3>
-          </div>
-        </SwiperSlide>
+                  {/* {review.stars} */}
+                </div>
+                <h2>{review.name}</h2>
+                <h3>{review.status}</h3>
+              </div>
+            </SwiperSlide>
+          );
+        })}
 
         <div className={styles.pagination}>
           <button

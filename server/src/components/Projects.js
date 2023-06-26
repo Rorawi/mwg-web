@@ -31,7 +31,7 @@ const Projects = () => {
           </div>
         </div>
         <div className={styles.img_div}>
-          <img src={img1} />
+          <img src={robotics} />
         </div>
       </div>
 

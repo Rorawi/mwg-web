@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../components/about.module.css";
 import img1 from "../assets/mwg-swiper1.jpg";
 import group from "../assets/group_img.jpg";
+import group1 from "../assets/TaWEP.jpg"
 import { FaPause } from "react-icons/fa";
 import TeamSection from "./Team";
 import { BlogSwiper, LogoSwiper, TestimonialSwiper } from "./SwiperComp";
@@ -18,7 +19,7 @@ export default function AboutUs() {
           </div>
         </div>
         <div className={styles.img_div}>
-          <img src={img1} />
+          <img src={group1} />
         </div>
       </div>
 

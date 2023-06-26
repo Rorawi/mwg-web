@@ -3,7 +3,7 @@ import styles from "../components/blogpost.module.css";
 
 const BlogPost = ({ title, content, onClick, blogImg, day, month, year }) => {
   const [length, setLength] = useState(false);
-  const maxContent = 70;
+  const maxContent = 100;
   return (
     <div className={styles.blog_post} onClick={onClick} >
       <div className={styles.img_div}>
