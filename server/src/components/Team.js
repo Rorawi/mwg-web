@@ -40,13 +40,13 @@ const TeamSection = () => {
           </div>
               <div className={styles.overlay}>
               <div className={styles.social}>
-                <Link to="">
+                <Link to="https://www.linkedin.com/in/florencetoffa/">
                   <FaLinkedin />
                 </Link>
-                <Link to="">
+                <Link to="https://www.facebook.com/florencetoffa">
                   <FaFacebookSquare />
                 </Link>
-                <Link to="">
+                <Link to="https://twitter.com/florencetoffa">
                   <FaTwitter />
                 </Link>
                 <Link to="">
@@ -63,7 +63,7 @@ const TeamSection = () => {
         </div>
 
             <div className={styles.dtl}>
-              <h1 className={styles.name}>Prince Adu</h1>
+              <h1 className={styles.name}>Prince Yaw Ameyedowo</h1>
               <h3 className={styles.bio}>Financial Accountant</h3>
           </div>
               <div className={styles.overlay}>
@@ -94,7 +94,7 @@ const TeamSection = () => {
           </div>
               <div className={styles.overlay}>
               <div className={styles.social}>
-                <Link to="">
+                <Link to="https://www.linkedin.com/in/talika-bernard/">
                   <FaLinkedin />
                 </Link>
                 <Link to="">
@@ -115,12 +115,12 @@ const TeamSection = () => {
         </div>
 
             <div className={styles.dtl}>
-              <h1 className={styles.name}>Estella Hilda</h1>
+              <h1 className={styles.name}>Estella Hilda Anaman </h1>
               <h3 className={styles.bio}>Resource Manager</h3>
           </div>
               <div className={styles.overlay}>
               <div className={styles.social}>
-                <Link to="">
+                <Link to="https://www.linkedin.com/in/estella-hilda-anaman-b356a6151/">
                   <FaLinkedin />
                 </Link>
                 <Link to="">
@@ -141,12 +141,12 @@ const TeamSection = () => {
         </div>
 
             <div className={styles.dtl}>
-              <h1 className={styles.name}>Issac Acheampong</h1>
+              <h1 className={styles.name}>Isaac Acheampong</h1>
               <h3 className={styles.bio}>Social Media Director</h3>
           </div>
               <div className={styles.overlay}>
               <div className={styles.social}>
-                <Link to="">
+                <Link to="https://www.linkedin.com/in/isaac-acheampong-162673203/">
                   <FaLinkedin />
                 </Link>
                 <Link to="">

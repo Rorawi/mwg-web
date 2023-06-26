@@ -8,6 +8,7 @@ import { LogoSwiper, SwiperComp } from "./SwiperComp";
 import Team from "./Team";
 import Map from "./Map";
 import Blog from "./Blog";
+import Subscribe from "./Subscribe";
 
 export default function Home() {
   return (
@@ -60,9 +61,14 @@ export default function Home() {
           <SwiperComp />
         </section>
       </main>
+          <LogoSwiper />
+          <br/>
+          <br/>
+          <br/>
           {/* <Team/> */}
           <Map/>
           <Blog />
+          <Subscribe />
           {/* <LogoSwiper/> */}
     </div>
   );

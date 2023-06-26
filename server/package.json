@@ -18,6 +18,8 @@
     "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
     "react-simple-typewriter": "^5.0.1",
+    "react-twitter-embed": "^4.0.4",
+    "react-twitter-widgets": "^1.11.0",
     "scrollreveal": "^4.0.9",
     "swiper": "^9.3.2",
     "twitter": "^1.7.1",
@@ -46,5 +48,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@iconify/icons-skill-icons": "^1.2.1",
+    "@iconify/react": "^4.1.0",
+    "concurrently": "^8.2.0"
   }
 }

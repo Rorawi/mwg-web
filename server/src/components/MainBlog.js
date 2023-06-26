@@ -145,8 +145,7 @@ const MainBlog = () => {
     {
       title:
         "Partnering for Progress: Africa Digital Skills Conference 2023 Empowering Africa’s Digital Future",
-      content:
-        `In today’s rapidly evolving digital landscape, equipping individuals with the necessary digital skills has become more critical than ever. Recognizing the urgent need to bridge the digital skills gap in Africa, Mobile Web Ghana has organized the annual Africa Digital Skills Conference 2023. This three-day virtual event aims to provide practical skills training to a diverse audience, including youth, entrepreneurs, students, professionals, government institutions, and more. By calling for partnerships and collaboration, this conference represents a significant initiative towards achieving the Sustainable Development Goals (SDGs) and fostering Africa’s digital skills advancement.
+      content: `In today’s rapidly evolving digital landscape, equipping individuals with the necessary digital skills has become more critical than ever. Recognizing the urgent need to bridge the digital skills gap in Africa, Mobile Web Ghana has organized the annual Africa Digital Skills Conference 2023. This three-day virtual event aims to provide practical skills training to a diverse audience, including youth, entrepreneurs, students, professionals, government institutions, and more. By calling for partnerships and collaboration, this conference represents a significant initiative towards achieving the Sustainable Development Goals (SDGs) and fostering Africa’s digital skills advancement.
      Addressing the Digital Skills `,
       blogImg: blogImg2,
       day: "13th",
@@ -234,6 +233,21 @@ Conclusion: The Africa Digital Skills Conference 2023 represents an invaluable o
     // Add more blog posts as needed
   ];
 
+
+const fetchData =()=> {
+  fetch('https://mobilewebghana.org/blog/')
+  .then(response => response.json())
+  .then(data => {
+    // Use the fetched data in your application
+    console.log(data);
+  })
+  .catch(error => {
+    // Handle any errors that occurred during the fetch request
+    console.error(error);
+  });
+}
+
+
   return (
     <div>
       <div className={styles.banner}>
@@ -247,8 +261,6 @@ Conclusion: The Africa Digital Skills Conference 2023 represents an invaluable o
           <img src={img1} />
         </div>
       </div>
-
-    
 
       {selectedBlogPost ? (
         <SingleBlogPost
@@ -264,44 +276,46 @@ Conclusion: The Africa Digital Skills Conference 2023 represents an invaluable o
       ) : (
         <>
           <div className={styles.inputDiv}>
-      <h2>// Our Blogs</h2>
-          <h1>Search for your favourite blogs</h1>
-        <input
-         type="search" 
-         value={search} 
-         className={styles.input}
-         name="search"
-         onChange={(e)=> {setSearch(e.target.value)}}
-         />
-      </div>
-
-        <BlogSection>
-          {
-          blogPosts.filter((blog)=> {
-            if(search == "") {
-              return blog
-            }
-            else if (
-              blog.title.toLowerCase().includes(search.toLowerCase())
-            ) {
-              return blog
-            }
-          }).map((blogPost) => (
-            <BlogPost
-              key={blogPost.title}
-              title={blogPost.title}
-              content={blogPost.content}
-              blogImg={blogPost.blogImg}
-              day={blogPost.day}
-              month={blogPost.month}
-              year={blogPost.year}
-              onClick={blogPost.onClick}
+            <h2>// Our Blogs</h2>
+            <h1>Search for blog posts</h1>
+            <input
+              type="search"
+              value={search}
+              className={styles.input}
+              name="search"
+              onChange={(e) => {
+                setSearch(e.target.value);
+              }}
             />
-          ))}
-        </BlogSection>
+          </div>
+
+{/* <button onClick={fetchData}>Click me</button> */}
+          <BlogSection>
+            {blogPosts
+              .filter((blog) => {
+                if (search == "") {
+                  return blog;
+                } else if (
+                  blog.title.toLowerCase().includes(search.toLowerCase())
+                ) {
+                  return blog;
+                }
+              })
+              .map((blogPost) => (
+                <BlogPost
+                  key={blogPost.title}
+                  title={blogPost.title}
+                  content={blogPost.content}
+                  blogImg={blogPost.blogImg}
+                  day={blogPost.day}
+                  month={blogPost.month}
+                  year={blogPost.year}
+                  onClick={blogPost.onClick}
+                />
+              ))}
+          </BlogSection>
         </>
       )}
-      
     </div>
   );
 };

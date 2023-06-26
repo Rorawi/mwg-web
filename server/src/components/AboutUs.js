@@ -2,9 +2,10 @@ import React from "react";
 import styles from "../components/about.module.css";
 import img1 from "../assets/mwg-swiper1.jpg";
 import group from "../assets/group_img.jpg";
+import group1 from "../assets/TaWEP.jpg"
 import { FaPause } from "react-icons/fa";
 import TeamSection from "./Team";
-import { BlogSwiper, TestimonialSwiper } from "./SwiperComp";
+import { BlogSwiper, LogoSwiper, TestimonialSwiper } from "./SwiperComp";
 import Testimonial from "./Testimonial";
 
 export default function AboutUs() {
@@ -18,7 +19,7 @@ export default function AboutUs() {
           </div>
         </div>
         <div className={styles.img_div}>
-          <img src={img1} />
+          <img src={group1} />
         </div>
       </div>
 
@@ -74,6 +75,10 @@ export default function AboutUs() {
         </div>
       </section>
       <TeamSection/>
+      <LogoSwiper />
+      <br/>
+      <br/>
+      <br/>
       <Testimonial/>
       {/* Testimonials section will go here */}
     </>

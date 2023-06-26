@@ -17,7 +17,7 @@ function OverView() {
             </div>
           </div>
           <div className={styles.img_div}>
-            <img src={img1} />
+            <img src={path} />
           </div>
         </div>
 

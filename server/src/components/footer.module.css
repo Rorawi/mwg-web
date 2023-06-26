@@ -55,7 +55,7 @@ footer a {
 
 .details {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   
   /* margin-top: 50px; */
@@ -63,7 +63,7 @@ footer a {
 
 .details .profile .logoDiv {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -74,7 +74,7 @@ footer a {
 .details .profile p {
   font-size: 14px;
   max-width: 300px;
-  text-align: center;
+  /* text-align: center; */
 
 }
 
@@ -126,15 +126,20 @@ footer a {
 
 }
 
+
 /*Socials*/
+.socials {
+
+  margin-top: 30px;
+}
 .socials h2 {
   font-weight: bold;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .socials div {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -143,7 +148,24 @@ footer a {
   font-size: 20px;
   margin-bottom: 6px;
 
-  color: #000;
+  /* color: #000; */
+}
+
+.socials div .twitter {
+  color: #00acee !important;
+}
+.socials div .facebook {
+  color: #3b5998 !important;
+}
+.socials div .linkedin {
+  color: #0072b1 !important;
+}
+
+
+.socials div .instagram {
+  width: 100%; 
+  height: 20px;
+  align-self: center;
 }
 
 footer hr {

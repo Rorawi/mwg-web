@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "../components/event.module.css";
 import img1 from "../assets/mwg-swiper1.jpg";
+import mcare from "../assets/mcare.jpg"
+
+
 import { Link } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
@@ -8,21 +11,33 @@ function Events() {
   const events = [
     {
       id: 1,
-      eventName: "Youth Media Literacy",
+      eventName: "Education U.S.A",
+      img: img1,
       time: "10AM GMT",
       eventOverview:
-        "This is an event mainly for the youth which seeks to increase the capacity of youths to consume and disseminate media contents responsibly.",
+        `This is an event mainly for the youth which seeks to increase the capacity 
+        of youths to consume and disseminate media contents responsibly.`,
         signUpLink: "https://tailwindcss.com/docs/box-shadow"
     },
     {
       id: 2,
-      eventName: "U.S Embassy",
-      time: "9AM GMT",
+      eventName: "Education U.S.A",
+      img: mcare,
+      time: "10AM GMT",
       eventOverview:
-        "This is an event mainly for  which seeks to increase the capacity of youths to consume and disseminate media contents responsibly.",
-        signUpLink: "https://www.youtube.com/watch?v=pEy-wOiMJps"
-
+        `This is an event mainly for the youth which seeks to increase the
+         capacity of youths to consume and disseminate media contents responsibly.`,
+        signUpLink: "https://tailwindcss.com/docs/box-shadow"
     },
+    // {
+    //   id: 2,
+    //   eventName: "U.S Embassy",
+    //   time: "9AM GMT",
+    //   eventOverview:
+    //     "This is an event mainly for  which seeks to increase the capacity of youths to consume and disseminate media contents responsibly.",
+    //     signUpLink: "https://www.youtube.com/watch?v=pEy-wOiMJps"
+
+    // },
   ];
   return (
     <>
@@ -56,10 +71,18 @@ function Events() {
           return (
             <>
             <div className={styles.event_div} key={event.id}>
-              <div >
+
+              <div className={styles.img_div_flyer}>
+                <img src={event.img}/>
+              </div>
+              <div className={styles.details}>
                 <div>
                   <h2>{event.eventName}</h2>
                   <p>{event.eventOverview}</p>
+                  <br/>
+                  <h2>
+                  {event.time}
+                  </h2>
                 </div>
                 
                 <Link to={event.signUpLink}>
@@ -72,11 +95,8 @@ function Events() {
           </button>
           </Link>
 
-              </div>
-              <div>
-                  <h2>
-                  {event.time}
-                  </h2>
+            
+              
               </div>
             </div>
             </>
